@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  qrcode:
+    build: .
+    ports:
+      - 8006:80
+    image: qrcode
+networks: {}
+
