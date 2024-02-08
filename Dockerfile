@@ -8,3 +8,4 @@ RUN ./build.sh
 
 FROM nginx:latest
 COPY --from=0 /src/build /usr/share/nginx/html
+LABEL org.opencontainers.image.description "Docker image that wraps https://github.com/viktorstrate/qr-gen"
